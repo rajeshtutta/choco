@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-name: chocodeploy
+  name: choco-deploy
 spec:
-replicas: 2
-selector:
-matchLabels:
-app: choco
-template:
-metadata:
-labels:
-app: choco
-spec:
-containers:
-- name: choco-container
-image: rajeshtutta123/choco:latest
-ports:
-- containerPort: 5000
+  replicas: 2
+  selector:
+    matchLabels:
+      app: choco
+  template:
+    metadata:
+      labels:
+        app: choco
+    spec:
+      containers:
+      - name: choco-container
+        image: rajeshtutta123/choco:latest
+        ports:
+        - containerPort: 5000
