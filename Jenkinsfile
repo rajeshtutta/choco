@@ -9,7 +9,7 @@ stages {
 
     stage('Clone Repository') {
         steps {
-            git 'main', url: 'https://github.com/rajeshtutta/choco.git'
+            git branch: 'main', url: 'https://github.com/rajeshtutta/choco.git'
         }
     }
 
