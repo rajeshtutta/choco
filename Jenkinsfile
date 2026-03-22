@@ -1,7 +1,6 @@
 pipeline {
 agent any
 
-```
 environment {
     DOCKER_IMAGE = "rajeshtutta123/choco"
 }
@@ -36,6 +35,5 @@ stages {
         }
     }
 }
-```
 
 }
